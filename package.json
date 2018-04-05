@@ -1,0 +1,31 @@
+{
+  "name": "react-block-reveal-animation",
+  "version": "1.0.0",
+  "description": "A simple React component to reveal content behind an animated block",
+  "main": "dist/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pettersamuelsen/react-block-reveal-animation.git"
+  },
+  "keywords": [
+    "react",
+    "animation"
+  ],
+  "author": "Petter Samuelsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pettersamuelsen/react-block-reveal-animation/issues"
+  },
+  "homepage": "https://github.com/pettersamuelsen/react-block-reveal-animation#readme",
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  }
+}
