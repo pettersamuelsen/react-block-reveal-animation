@@ -11,7 +11,8 @@
     "build:css": "node-sass-chokidar ./src -o ./dist",
     "dev": "concurrently --kill-others \"npm run dev:js\" \"npm run dev:css\"",
     "dev:js": "babel src --watch --out-dir dist",
-    "dev:css": "node-sass-chokidar ./src -o ./dist --watch"
+    "dev:css": "node-sass-chokidar ./src -o ./dist --watch",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
