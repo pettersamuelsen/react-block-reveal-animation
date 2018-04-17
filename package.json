@@ -2,11 +2,16 @@
   "name": "react-block-reveal-animation",
   "version": "1.0.0",
   "description": "A simple React component to reveal content behind an animated block",
-  "main": "dist/index.js",
-  "source": "src/index.js",
+  "main": "src/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
+    "clean": "rm -rf dist",
+    "build": "npm-run-all clean build:*",
+    "build:js": "babel src --out-dir dist",
+    "build:css": "node-sass-chokidar ./src -o ./dist",
+    "dev": "concurrently --kill-others \"npm run dev:js\" \"npm run dev:css\"",
+    "dev:js": "babel src --watch --out-dir dist",
+    "dev:css": "node-sass-chokidar ./src -o ./dist --watch"
   },
   "repository": {
     "type": "git",
@@ -23,10 +28,17 @@
   },
   "homepage": "https://github.com/pettersamuelsen/react-block-reveal-animation#readme",
   "devDependencies": {
-    "microbundle": "^0.4.4"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "node-sass-chokidar": "^1.2.2",
+    "npm-run-all": "^4.1.2",
+    "parcel-bundler": "^1.7.0"
   },
   "dependencies": {
     "prop-types": "^15.6.1",
-    "react": "^16.3.1"
+    "react": "^16.0",
+    "react-dom": "^16.3.1"
   }
 }
