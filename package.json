@@ -1,9 +1,8 @@
 {
   "name": "react-block-reveal-animation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple React component to reveal content behind an animated block",
-  "main": "src/index.js",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm-run-all clean build:*",
