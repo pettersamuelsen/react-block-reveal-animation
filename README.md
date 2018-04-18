@@ -4,6 +4,9 @@ A simple React component to reveal content behind a block using CSS3 animations.
 
 ![](https://user-images.githubusercontent.com/1244867/38920515-b8218792-42f3-11e8-8de4-3349c3542950.png)
 
+## Screenshot
+![](https://user-images.githubusercontent.com/1244867/38922583-cffefdc2-42f8-11e8-80f6-997821099bd8.gif)
+
 ## Usage
 Install using npm:
 
