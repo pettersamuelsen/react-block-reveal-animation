@@ -56,7 +56,9 @@ Name | Description | Default
 `delay` | Animation start delay in seconds | 1
 `duration` | Animation duration in seconds | 0.9
 
+## Author
 
+Created by Petter Samuelsen. Inspired by [Tympanus Block Revealers](https://tympanus.net/Development/BlockRevealers/)
 
 ## The MIT License (MIT)
 
